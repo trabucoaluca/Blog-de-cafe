@@ -1,0 +1,13 @@
+:root {
+    'Open Sans', sans-serif;
+    'PT Sans', sans-serif;
+
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *::after {
+    box-sizing: border-box;
+}
