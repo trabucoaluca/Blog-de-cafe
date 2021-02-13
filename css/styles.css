@@ -70,3 +70,16 @@ img {
     text-align: center;
 }
 
+/*Header*/
+.header {
+    background-image: url(../img/banner.jpg);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;/*Sirve para cuando la pantalla es mas pequeña se tiene que centrar, y se ocupan dos parametros, porque se tiene que centrar tanto VERTICAL como HORIZONTAL*/
+}
+
+.header__texto {
+    color: var(--blanco);
+    margin-top: 5rem;
+}
