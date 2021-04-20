@@ -164,6 +164,7 @@ img {
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
+    border: none;
 }
 
 @media (min-width: 768px) {
@@ -171,6 +172,10 @@ img {
     .boton {
         display: inline-block;
     }
+}
+
+.boton:hover {
+    cursor: pointer;
 }
 
 .boton--primario {
@@ -278,4 +283,32 @@ img {
     height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.formulario {
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.campo__label {
+    flex: 0 0 9rem;/*(no tiene factor de crecimiento "0")  (no te puedes hacer mas pequeño "0")  (conservaras una distancia/tamaño base (tu width) de "9rem")*/
+    text-align: right;
+}
+
+.campo__field {
+    flex: 1;/*por cada px que encunetres( asignado arriba "0") tu creceras "1"px, es decir rellenaras el espacio disponible*/
+    border: 1px solid var(--gris);
+}
+
+.campo__field--textarea {
+    height: 20rem;
 }
