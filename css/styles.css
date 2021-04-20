@@ -272,3 +272,10 @@ img {
     font-size: 2rem;
 }
 
+/** Contacto **/
+.contacto-bg {
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
