@@ -77,8 +77,17 @@ img {
 }
 
 /*Header*/
-.header {
+/*con normalizr veremos si el navegador soporta webp, si esto se cmple colocaremos una imagen webp*/
+.webp .header {
+    background-image: url(../img/banner.webp);
+}
+
+/*si no lo soporta, utilizaremos un jpg*/
+.no-webp .header {
     background-image: url(../img/banner.jpg);
+}
+
+.header {
     height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
